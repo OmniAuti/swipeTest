@@ -5,10 +5,12 @@ const displayCheck = document.querySelector('.display-check')
 
 
 let movement = 0;
-container.addEventListener('touchstart', (e) => {
+/*container.addEventListener('touchstart', (e) => {
     const startX = e.touches[0].clientX
     displayStart.innerHTML = startX
-})
+})*/
+
+displayCheck.innerHTML = 'New update'
 container.addEventListener('touchmove', (e) => {
     movement += 25;
     //container.style.transform = `translateX(-${movement}%)`
@@ -16,13 +18,17 @@ container.addEventListener('touchmove', (e) => {
     displayStart.innerHTML = startX
     let x = e.touches[0].clientX
     display.innerHTML = x 
-    container.addEventListener('touchend', () => {
+  
+    if (x < startX) {
         movement += 25;
-        if (x < startX) {
-            displayCheck.innerHTML = 'Got it'
-            container.style.transform = `translateX(-${movement}%)`
-        }
-    })
+        displayCheck.innerHTML = 'Got it'
+        container.style.transform = `translateX(-${movement}%)`
+    }
    
 })
-
+/*
+container.addEventListener('touchend', (e) => {
+    movement += 25;
+    displayCheck.innerHTML = 'Got it'
+    container.style.transform = `translateX(-${movement}%)`
+})*/
