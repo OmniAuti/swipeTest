@@ -1,6 +1,7 @@
 const container = document.querySelector('.container')
 const displayStart = document.querySelector('.display-start')
 const display = document.querySelector('.display')
+const displayCheck = document.querySelector('.display-check')
 
 
 let movement = 0;
@@ -18,6 +19,7 @@ container.addEventListener('touchmove', (e) => {
     container.addEventListener('touchend', () => {
         movement += 25;
         if (x < startX) {
+            displayCheck.innerHTML = 'Got it'
             container.style.transform = `translateX(-${movement}%)`
         }
     })
