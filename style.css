@@ -5,6 +5,8 @@ body {
 .container {
   display: flex;
   width: 400vw;
+  transition: transform ease-in-out 500ms;
+
 }
 
 .page-one {
@@ -12,24 +14,31 @@ body {
   height: 50vh;
   background-color: red;
   display: inline-block;
+  transition: transform ease-in-out 500ms;
 }
 .page-two {
   width: 100vw;
   height: 50vh;
   background-color: blue;
   display: inline-block;
+  transition: transform ease-in-out 500ms;
+
 }
 .page-three {
   width: 100vw;
   height: 50vh;
   background-color: green;
   display: inline-block;
+  transition: transform ease-in-out 500ms;
+
 }
 .page-four {
   width: 100vw;
   height: 50vh;
   background-color: black;
   display: inline-block;
+  transition: transform ease-in-out 500ms;
+
 }
 
 .display {
