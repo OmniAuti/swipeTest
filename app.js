@@ -12,7 +12,7 @@ container.addEventListener("touchstart", (e) => {
   displayStart.innerHTML = startX;
 });
 
-displayCheck.innerHTML = "Newest of the update";
+displayCheck.innerHTML = "TRULY ! Newest of the update";
 container.addEventListener("touchmove", (e) => {
   moveX = e.touches[0].clientX;
   display.innerHTML = moveX;
