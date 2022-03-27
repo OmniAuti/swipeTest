@@ -1,0 +1,38 @@
+body {
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  width: 400vw;
+}
+
+.page-one {
+  width: 100vw;
+  height: 90vh;
+  background-color: red;
+  display: inline-block;
+}
+.page-two {
+  width: 100vw;
+  height: 90vh;
+  background-color: blue;
+  display: inline-block;
+}
+.page-three {
+  width: 100vw;
+  height: 90vh;
+  background-color: green;
+  display: inline-block;
+}
+.page-four {
+  width: 100vw;
+  height: 90vh;
+  background-color: black;
+  display: inline-block;
+}
+
+.display {
+  height: 10vh;
+  width: 100vw;
+}
